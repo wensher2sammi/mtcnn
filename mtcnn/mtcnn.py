@@ -400,6 +400,7 @@ class MTCNN(object):
         :return: list containing all the bounding boxes detected with their keypoints.
         """
         if img is None or not hasattr(img, "shape"):
+            print("img is {}" .format(img))
             raise InvalidImage("Image not valid.")
 
         height, width, _ = img.shape
